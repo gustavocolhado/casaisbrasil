@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://confissoesdecorno.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /internal/
+
+# Allow important pages
+Allow: /
+Allow: /login
+Allow: /register
+Allow: /contact
+Allow: /home
+Allow: /search
+Allow: /posts/
+Allow: /users/ 
