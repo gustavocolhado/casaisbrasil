@@ -1,37 +1,38 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+/.phpunit.cache
+/.developer
+/.api_docs
 /node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
+/public/build
+/public/hot
+/public/storage
+/storage/app
+/storage/*.key
+/vendor
 .env
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+docker-compose.yml
+/storage/frontend/build.num
+/.fleet
+/.idea
+/.vscode
+/bootstrap/cache
+/public/vendor/
+/docker/database
+/services/ffmpeg/bin
+/content_migrator
+/refactor
+/plugins/icons/
+pack.sh
+/lang/ru/
+/var/world/countries/ru.php
+/var/world/reports/post/ru.php
+/var/world/reports/user/ru.php
+/var/world/user_categories/ru.php

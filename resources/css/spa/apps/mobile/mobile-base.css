@@ -1,0 +1,82 @@
+/* Desktop specific styles */
+
+.font-smoothing{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.skeleton{
+    @apply relative overflow-hidden block bg-fill-tr rounded-md leading-none;
+}
+
+.skeleton-rounded{
+    @apply relative overflow-hidden block bg-fill-tr rounded-2xl leading-none;
+}
+
+.skeleton-square{
+    @apply relative overflow-hidden block bg-fill-tr leading-none;
+}
+
+.skeleton-circle{
+    @apply relative overflow-hidden block bg-fill-tr rounded-full leading-none;
+}
+
+.skeleton::after, .skeleton-circle::after, .skeleton-square::after{
+    content: "";
+    animation: skeleton-animation 1.2s infinite;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255, 255, 255, 0.4), rgba(255,255,255,0));
+}
+
+.colibri-primary-animation{
+    @apply w-2 aspect-square rounded-full;
+    animation: primary-animation 1s infinite linear alternate;
+}
+
+@keyframes primary-animation {
+    0%  {
+        box-shadow: 12px 0 var(--button-dot-fill-pr), -12px 0 var(--button-dot-fill-sc);
+        background-color: var(--button-dot-fill-pr)
+    }
+    33% {
+        box-shadow: 12px 0 var(--button-dot-fill-pr), -12px 0 var(--button-dot-fill-sc);
+        background-color: var(--button-dot-fill-sc)
+    }
+    66% {
+        box-shadow: 12px 0 var(--button-dot-fill-sc), -12px 0 var(--button-dot-fill-pr); 
+        background-color: var(--button-dot-fill-sc)
+    }
+    100%{
+        box-shadow: 12px 0 var(--button-dot-fill-sc), -12px 0 var(--button-dot-fill-pr);
+        background-color: var(--button-dot-fill-pr)
+    }
+}
+
+@keyframes skeleton-animation {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.bounce-up {
+    animation: bounce-up 2s ease-in-out infinite;
+}
+
+@keyframes bounce-up {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+}

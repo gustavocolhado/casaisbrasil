@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@import "../themes/devices/desktop.css" layer(theme);
+@import "../themes/light/colors.css" layer(theme);
+
+@import "../themes/base.css" layer(theme);
+
+/* Document specific styles */

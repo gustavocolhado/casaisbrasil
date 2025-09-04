@@ -1,2 +1,0 @@
-# Arquivo ads.txt para monetização
-# Adicione aqui os domínios autorizados quando implementar anúncios 
