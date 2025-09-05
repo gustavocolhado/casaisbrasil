@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\user\Wallet;
+namespace App\Http\Controllers\Api\User\Wallet;
 
 use Exception;
 use App\Support\Num;
