@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ['php', 'phpPackages.composer', 'nodejs', 'npm', 'phpExtensions.pdo_mysql', 'phpExtensions.gd', 'phpExtensions.zip', 'phpExtensions.curl', 'phpExtensions.mbstring', 'phpExtensions.xml', 'phpExtensions.bcmath', 'phpExtensions.fileinfo']
+nixPkgs = ['php', 'phpPackages.composer', 'nodejs', 'phpExtensions.pdo_mysql', 'phpExtensions.gd', 'phpExtensions.zip', 'phpExtensions.curl', 'phpExtensions.mbstring', 'phpExtensions.xml', 'phpExtensions.bcmath', 'phpExtensions.fileinfo']
 
 [phases.install]
 cmds = [
