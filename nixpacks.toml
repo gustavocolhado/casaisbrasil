@@ -18,6 +18,7 @@ cmds = [
     "mkdir -p /app/storage/framework/sessions", 
     "mkdir -p /app/storage/framework/views",
     "mkdir -p /app/storage/logs",
+    "mkdir -p /app/storage/frontend",
     "chmod -R 775 /app/bootstrap/cache",
     "chmod -R 775 /app/storage",
     "composer install --ignore-platform-reqs",
