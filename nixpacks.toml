@@ -1,6 +1,15 @@
 [phases.setup]
 nixPkgs = ['php', 'phpPackages.composer', 'nodejs', 'phpExtensions.pdo_mysql', 'phpExtensions.gd', 'phpExtensions.zip', 'phpExtensions.curl', 'phpExtensions.mbstring', 'phpExtensions.xml', 'phpExtensions.bcmath', 'phpExtensions.fileinfo']
 
+[variables]
+BROADCAST_CONNECTION = "reverb"
+REVERB_APP_KEY = "local"
+REVERB_APP_SECRET = "local"
+REVERB_APP_ID = "local"
+REVERB_HOST = "localhost"
+REVERB_PORT = "443"
+REVERB_SCHEME = "https"
+
 [phases.install]
 cmds = [
     "mkdir -p /app/bootstrap/cache",

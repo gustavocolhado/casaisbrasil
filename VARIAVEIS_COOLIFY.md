@@ -145,6 +145,19 @@ REVERB_PORT=443
 REVERB_SCHEME=https
 ```
 
+### 📡 **PUSHER (ALTERNATIVA)**
+
+```bash
+# Pusher (se preferir usar Pusher ao invés de Reverb)
+PUSHER_APP_ID=seu_pusher_app_id
+PUSHER_APP_KEY=seu_pusher_app_key
+PUSHER_APP_SECRET=seu_pusher_app_secret
+PUSHER_APP_CLUSTER=mt1
+PUSHER_HOST=
+PUSHER_PORT=443
+PUSHER_SCHEME=https
+```
+
 ### 🎥 **FFMPEG**
 
 ```bash
