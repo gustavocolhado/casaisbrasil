@@ -1,0 +1,19 @@
+[phases.setup]
+nixPkgs = []
+
+[phases.install]
+cmds = [
+    "mkdir -p /app/bootstrap/cache",
+    "mkdir -p /app/storage/app",
+    "mkdir -p /app/storage/framework/cache",
+    "mkdir -p /app/storage/framework/sessions", 
+    "mkdir -p /app/storage/framework/views",
+    "mkdir -p /app/storage/logs",
+    "chmod -R 775 /app/bootstrap/cache",
+    "chmod -R 775 /app/storage",
+    "composer install --ignore-platform-reqs",
+    "npm ci"
+]
+
+[phases.build]
+cmds = ["npm run build"]
